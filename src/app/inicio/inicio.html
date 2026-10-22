@@ -9,8 +9,58 @@
     </div>
     <div class="banner__decoration" aria-hidden="true">
       <div class="banner__console" #console></div>
-      <img src="Laptop.png" alt="" class="banner__laptop" />
+      <picture class="banner__laptop">
+        <source srcset="Laptop.avif" />
+        <img src="Laptop.webp" alt="" />
+      </picture>
     </div>
   </section>
 
+  <section class="welcome">
+    <h2 class="welcome__title">¡Te doy la bienvenida a mi sitio web!</h2>
+    <p class="welcome__text">
+      Aquí podrás conocerme un poco más y a los proyectos en los que he trabajado.
+    </p>
+    <p class="welcome__text">
+      Estoy muy emocionada de compartir mi trabajo contigo. No dudes en contactarme si tienes alguna
+      duda o si te gustaría trabajar conmigo.
+    </p>
+    <p class="welcome__text">¡Gracias por visitar mi portafolio!</p>
+    <div class="welcome__options">
+      <button class="jl-icon-btn img-btn">
+        <picture class="img-btn__img img-btn__img--cv">
+          <source srcset="CVDownloadIcon.avif" />
+          <img src="CVDownloadIcon.webp" alt="" />
+        </picture>
+        <div class="img-btn__text">
+          Descargar CV
+        </div>
+      </button>
+      <button class="jl-icon-btn img-btn">
+        <picture class="img-btn__img">
+          <source srcset="Selfie.avif" />
+          <img src="Selfie.webp" alt="" />
+        </picture>
+        <div class="img-btn__text">
+          Acerca de mí
+        </div>
+      </button>
+      <button class="jl-icon-btn img-btn">
+        <picture class="img-btn__img">
+          <img src="Portafolio.webp" alt="" />
+        </picture>
+        <div class="img-btn__text">
+          Portafolio
+        </div>
+      </button>
+      <button class="jl-icon-btn img-btn">
+        <picture class="img-btn__img img-btn__img--contacto">
+          <img src="Contacto.webp" alt="" />
+        </picture>
+        <div class="img-btn__text">
+          Contacto
+        </div>
+      </button>
+    </div>
+  </section>
 </div>

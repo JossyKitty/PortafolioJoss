@@ -17,7 +17,7 @@
 
   &__title {
     color: var(--shade-0);
-    font-size: clamp(2rem, 5vw, 4rem);
+    font-size: clamp(2em, 5vw, 4em);
     text-align: center;
     margin-top: 0;
   }
@@ -25,7 +25,7 @@
   &__subtitle {
     color: var(--shade-0);
     text-align: center;
-    font-size: 1.5rem;
+    font-size: 1.5em;
   }
 
   &__decoration {
@@ -59,16 +59,95 @@
   }
 }
 
+.welcome {
+  width: 95%;
+  margin: 2.5em auto;
+  border-radius: 2em;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1.5em;
+  background-color: rgba($color: #ffffff, $alpha: 0.85);
+
+  &__title {
+    text-align: center;
+  }
+
+  &__text {
+    text-align: center;
+  }
+
+  &__options {
+    margin-top: 2em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 1em 0.5em;
+    flex-wrap: wrap;
+  }
+}
+
+.img-btn {
+  width: clamp(14em, 13vw, 17em);
+  height: fill;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5em;
+  padding: 1em;
+
+  &__img {
+    margin: auto;
+    display: flex;
+    width: 84%;
+
+    &--cv {
+      width: 70%;
+    }
+
+    &--contacto {
+      width: 100%;
+    }
+  }
+
+  &__text {
+    font-weight: 900;
+    color: var(--primary-darker);
+    font-size: 1.25em;
+  }
+
+  &:hover,&:focus {
+    .img-btn {
+      &__img {
+        scale: 1.1;
+      }
+
+      &__text {
+        color: var(--primary-dark);
+      }
+    }
+  }
+
+  &:active {
+    .img-btn {
+      &__img {
+        scale: 0.95;
+      }
+    }
+  }
+}
+
 @media (max-width: 650px) {
   .banner {
     height: auto;
 
     &__decoration {
-        display: none;
+      display: none;
     }
 
     &__text {
-        margin: 4em 0;
+      margin: 4em 0;
     }
   }
 }

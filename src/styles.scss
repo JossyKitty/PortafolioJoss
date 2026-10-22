@@ -1,4 +1,10 @@
 /* You can add global styles to this file, and also import other style files */
 body {
     background-color: var(--primary-lighter);
+
+    //TO DO: Borrar:
+    picture img {
+        width: 100%;
+        height: auto;
+    }
 }
