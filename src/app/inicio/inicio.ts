@@ -123,4 +123,13 @@ export class Inicio implements AfterViewInit {
       }
     }
   }
+
+  descargarCV() {
+    const a = document.createElement('a');
+    a.href = "/CV.pdf";
+    a.download = "CV Josselyn Maldonado Muñoz"
+    document.body.appendChild(a);
+    a.click();
+    document.body.removeChild(a);
+  }
 }
