@@ -1,0 +1,66 @@
+.acerca-de {
+    padding:  1.5em 3vw;
+    margin: 1.5em 3vw;
+    border-radius: 2em;
+
+    &__title {
+        text-align: center;
+    }
+
+    &__banner {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        flex-wrap: wrap;
+        margin-bottom: 3em;
+    }
+
+    &__banner-text {
+        text-align: center;
+        min-width: 60%;
+        width: 30em;
+        max-width: 100%;
+    }
+
+    &__img {
+        max-width: 17em;
+        width: 100%;
+    }
+
+    &__header {
+        display: grid;
+        grid-template-columns: 4.5em 1fr;
+        gap: 0.5em;
+        align-items: center;
+    }
+
+    &__text {
+        text-align: center;
+    }
+
+    &__section {
+        margin-top: 1em;
+    }
+}
+
+.estudios {
+    &__row {
+        display: grid;
+        grid-template-columns: repeat( auto-fit, minmax(min(25em,100%), 1fr) );
+        gap: 1em 1.5em;
+        margin: auto;
+    }
+
+    &__card {
+        display: grid;
+        grid-template-columns: 6.2em 1fr;
+        gap: 1em;
+    }
+
+    &__header {
+        font-weight: bold;
+        margin-bottom: 0.4em;
+        font-size: 1.1em;
+    }
+}

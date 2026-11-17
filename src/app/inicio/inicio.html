@@ -16,7 +16,7 @@
     </div>
   </section>
 
-  <section class="welcome">
+  <section class="welcome jl-background">
     <h2 class="welcome__title">¡Te doy la bienvenida a mi sitio web!</h2>
     <p class="welcome__text">
       Aquí podrás conocerme un poco más y a los proyectos en los que he trabajado.
@@ -36,7 +36,7 @@
           Descargar CV
         </div>
       </button>
-      <button class="jl-icon-btn img-btn">
+      <button class="jl-icon-btn img-btn" (click)="redirectTo('/acerca-de-mi')">
         <picture class="img-btn__img">
           <source srcset="Selfie.avif" />
           <img src="Selfie.webp" alt="" />

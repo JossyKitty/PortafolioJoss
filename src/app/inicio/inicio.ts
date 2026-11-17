@@ -1,4 +1,5 @@
-import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, ViewChild } from '@angular/core';
+import { AfterViewInit, ChangeDetectorRef, Component, ElementRef, inject, ViewChild } from '@angular/core';
+import { Router } from '@angular/router';
 import { concatMap, endWith, from, map, timer } from 'rxjs';
 
 export interface ISimulatedConsoleText {
@@ -16,7 +17,7 @@ export interface ISimulatedConsoleText {
 export class Inicio implements AfterViewInit {
   @ViewChild('console') consoleRef: ElementRef<HTMLDivElement> | undefined;
 
-  constructor(private cdr: ChangeDetectorRef) {}
+  private router:Router = inject(Router);
 
   consoleTexts: ISimulatedConsoleText[] = [
     {
@@ -131,5 +132,9 @@ export class Inicio implements AfterViewInit {
     document.body.appendChild(a);
     a.click();
     document.body.removeChild(a);
+  }
+
+  redirectTo(url:string) {
+    this.router.navigateByUrl(url);
   }
 }

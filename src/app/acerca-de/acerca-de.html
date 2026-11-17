@@ -1,0 +1,78 @@
+<div class="acerca-de jl-background">
+  <h1 class="acerca-de__title">Acerca de mí</h1>
+  <div class="acerca-de__banner">
+    <p class="acerca-de__banner-text">
+      ¡Hola! Soy Josselyn Maldonado Muñoz, tengo 26 años y soy ingeniera de software. Conocí el
+      mundo de la programación en mi último año de secundaria, me gustó y decidí dedicarme al
+      desarrollo. Desde entonces he continuado aprendiendo sobre programación, UX, Cloud Computing y
+      la metodología Agile. Conoce más a detalle mi camino de aprendizaje aquí abajo :3
+    </p>
+    <picture class="acerca-de__img">
+      <source srcset="SobreMi.avif" />
+      <img src="SobreMi.webp" alt="" />
+    </picture>
+  </div>
+  <jl-section-scroller [sections]="tabs"></jl-section-scroller>
+  <section class="acerca-de__section estudios">
+    <div class="acerca-de__header">
+      <img src="ico_estudios.webp" alt="" class="acerca-de__header-icon" />
+      <h2 class="acerca-de__subtitle" id="estudios">Estudios</h2>
+    </div>
+    <p class="acerca-de__text"></p>
+    <div class="estudios__row">
+      <div class="estudios__card">
+        <picture class="estudios__logo">
+          <img src="DGETI.webp" alt="" />
+        </picture>
+        <div class="estudios__info">
+          <div class="estudios__header">
+            Centro de Bachillerato Tecnológico Industrial y de Servicios 260
+          </div>
+          <div class="estudios__detail">Técnico en programación (2018)</div>
+        </div>
+      </div>
+      <div class="estudios__card">
+        <picture class="estudios__logo">
+          <source srcset="UTP.avif" />
+          <img src="UTP.webp" alt="" />
+        </picture>
+        <div class="estudios__info">
+          <div class="estudios__header">Universidad Tecnológica de Puebla</div>
+          <div class="estudios__detail">
+            <ul class="jl-catlist">
+              <li>TSU en Desarrollo de Software Multiplataforma (2020)</li>
+              <li>Ingeniería en Desarrollo y Gestión de Software (2022)</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+    <h3>Cursos</h3>
+    <div class="estudios__row">
+      <div class="estudios__card">
+        <picture class="estudios__logo">
+          <source srcset="Google.avif" />
+          <img src="Google.webp" alt="" />
+        </picture>
+        <div class="estudios__info">
+          <div class="estudios__header">Coursera</div>
+          <div class="estudios__detail">
+            Certificado de Diseño de Experiencia del Usuario (UX) de Google (2023)
+          </div>
+        </div>
+      </div>
+      <div class="estudios__card">
+        <picture class="estudios__logo">
+          <source srcset="AIAgility.avif" />
+          <img src="AIAgility.webp" alt="" />
+        </picture>
+        <div class="estudios__info">
+          <div class="estudios__header">Scrum Aliance</div>
+          <div class="estudios__detail">
+            AI & Agility (2024)
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
